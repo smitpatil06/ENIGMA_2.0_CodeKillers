@@ -215,7 +215,35 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# Node.js / React / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+.next/
+out/
+.cache/
+.parcel-cache/
+.DS_Store
+*.tsbuildinfo
 
+# Data files (large datasets)
 *.pkl
 *.csv
-orbital_agronomy/data/
+orbital_agronomy/data/datasets/
+orbital_agronomy/data/processed/
+
+# Legacy/Archive
+orbital_agronomy/legacy/
+
+# Temporary files
+*.jpeg
+*.jpg
+*.png
+!frontend/public/*.png
+!frontend/public/*.jpg
+file.txt
+INTEGRATION_GUIDE.md

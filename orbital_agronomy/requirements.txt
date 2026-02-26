@@ -49,4 +49,8 @@ typing_extensions
 tzdata
 urllib3
 watchdog
-xyzservices
+xyzservicesgdown
+fastapi
+uvicorn[standard]
+opencv-python
+python-multipart
