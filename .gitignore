@@ -248,3 +248,10 @@ orbital_agronomy/legacy/
 file.txt
 INTEGRATION_GUIDE.md
 orbital_agronomy/CHANGELOG.md
+
+# Test and temporary scripts
+test_*.sh
+run_*.sh
+*-shit/
+*.bak
+*.tmp
