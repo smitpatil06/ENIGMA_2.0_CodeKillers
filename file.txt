@@ -1,0 +1,79 @@
+.
+├── file.txt
+└── orbital_agronomy
+    ├── app
+    │   └── app.py
+    ├── data
+    │   ├── datasets
+    │   │   ├── train
+    │   │   └── val
+    │   └── processed
+    │       └── master_training_data.csv
+    ├── models
+    │   └── stress_vision_model.pkl
+    ├── notebooks
+    ├── requirements.txt
+    ├── src
+    │   ├── image_to_tabular.py
+    │   ├── processor.py
+    │   ├── train_cnn.py
+    │   ├── train_model.py
+    │   └── train_rf.py
+    └── venv
+        ├── bin
+        │   ├── activate
+        │   ├── activate.csh
+        │   ├── activate.fish
+        │   ├── Activate.ps1
+        │   ├── earthengine
+        │   ├── f2py
+        │   ├── fonttools
+        │   ├── futurize
+        │   ├── geemap
+        │   ├── geocode
+        │   ├── ipython
+        │   ├── ipython3
+        │   ├── isympy
+        │   ├── jsonschema
+        │   ├── normalizer
+        │   ├── numpy-config
+        │   ├── pasteurize
+        │   ├── pip
+        │   ├── pip3
+        │   ├── pip3.14
+        │   ├── plotly_get_chrome
+        │   ├── proton
+        │   ├── proton-viewer
+        │   ├── pyftmerge
+        │   ├── pyftsubset
+        │   ├── pygmentize
+        │   ├── pyrsa-decrypt
+        │   ├── pyrsa-encrypt
+        │   ├── pyrsa-keygen
+        │   ├── pyrsa-priv2pub
+        │   ├── pyrsa-sign
+        │   ├── pyrsa-verify
+        │   ├── python -> /usr/bin/python
+        │   ├── python3 -> python
+        │   ├── python3.14 -> python
+        │   ├── rio
+        │   ├── scooby
+        │   ├── streamlit
+        │   ├── torchfrtrace
+        │   ├── torchrun
+        │   ├── ttx
+        │   ├── watchmedo
+        │   └── 𝜋thon -> python
+        ├── etc
+        │   └── jupyter
+        ├── include
+        ├── lib
+        │   └── python3.14
+        ├── lib64 -> lib
+        ├── pyvenv.cfg
+        └── share
+            ├── jupyter
+            ├── man
+            └── xyzservices
+
+23 directories, 54 files
