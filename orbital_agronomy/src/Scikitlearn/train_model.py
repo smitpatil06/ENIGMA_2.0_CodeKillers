@@ -3,6 +3,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 import joblib
+import os
+
+# Project paths
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def train_stress_vision_model(csv_path, model_output_path):
     print("Loading the massive dataset... (this takes a moment)")
@@ -43,10 +47,10 @@ def train_stress_vision_model(csv_path, model_output_path):
     print("SUCCESS! Model is ready for the visualization phase.")
 
 # --- RUN THE SCRIPT ---
-# Go up 2 levels from Scikitlearn/ to reach orbital_agronomy/
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CSV_DATA_PATH = os.path.join(PROJECT_ROOT, 'data', 'datasets', 'master_training_data.csv')
-MODEL_SAVE_PATH = os.path.join(PROJECT_ROOT, 'models', 'stress_vision_model.pkl')
+MODEL_SAVE_PATH = os.path.join(PROJECT_ROOT, 'models', 'CNN+scikit', 'stress_vision_model.pkl')
 
 if __name__ == "__main__":
+    print(f"CSV Path: {CSV_DATA_PATH}")
+    print(f"Model Save Path: {MODEL_SAVE_PATH}")
     train_stress_vision_model(CSV_DATA_PATH, MODEL_SAVE_PATH)

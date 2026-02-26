@@ -12,7 +12,7 @@ import time
 # --- CONFIGURATION ---
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TRAIN_DIRECTORY = os.path.join(PROJECT_ROOT, 'data', 'datasets', 'train')
-MODEL_DIR = os.path.join(PROJECT_ROOT, 'models')
+MODEL_DIR = os.path.join(PROJECT_ROOT, 'models', 'CNN_2D')
 
 PATCH_SIZE = 16
 EPOCHS = 10

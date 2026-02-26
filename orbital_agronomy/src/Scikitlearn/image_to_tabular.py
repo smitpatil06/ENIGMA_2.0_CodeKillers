@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import os
 
+# Project paths
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 def process_folder_dataset(train_folder, output_csv):
     print(f"Scanning directories in {train_folder}...")
     
@@ -54,10 +57,10 @@ def process_folder_dataset(train_folder, output_csv):
     return master_df
 
 # --- RUN THE SCRIPT ---
-# Go up 2 levels from Scikitlearn/ to reach orbital_agronomy/
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 TRAIN_DIRECTORY = os.path.join(PROJECT_ROOT, 'data', 'datasets', 'train')
 FINAL_ML_DATASET = os.path.join(PROJECT_ROOT, 'data', 'datasets', 'master_training_data.csv')
 
 if __name__ == "__main__":
+    print(f"Train Directory: {TRAIN_DIRECTORY}")
+    print(f"Output CSV: {FINAL_ML_DATASET}")
     df = process_folder_dataset(TRAIN_DIRECTORY, FINAL_ML_DATASET)
